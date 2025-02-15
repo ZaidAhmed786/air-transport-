@@ -1,0 +1,98 @@
+/***
+
+====================================================================
+    Funfact Section
+====================================================================
+
+***/
+
+.funfact-section {
+    position: relative;
+    padding: 120px 0 70px;
+    .bg {
+        height: auto;
+        top: 0;
+        bottom: -220px;
+        &:before {
+            content: '';
+            @include overlay;
+            opacity: .90;
+            background-color: #f1f1f6;
+        }
+    }
+    .fact-counter {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        @include media-breakpoint-down(lg){
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        @include media-breakpoint-down(md){
+            justify-content: center;
+        }
+    }
+}
+
+.counter-block-three {
+    margin-bottom: 30px;
+    .inner-box {
+        position: relative;
+        padding: 30px 35px 25px;
+        width: 350px;
+        border-top: 4px solid var(--theme-color2);
+        background-color: var(--theme-color-light);
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(xl){
+            width: 100%;
+        }
+        &:hover {
+            transform: translateY(-10px);
+            .content {
+                img {
+                    transform: scaleX(-1);
+                }
+            }
+        }
+        .content {
+            position: relative;
+            display: flex;
+            margin-bottom: 15px;
+            @include media-breakpoint-down(sm){
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                margin-bottom: 0;
+            }
+            img {
+                position: relative;
+                margin-right: 30px;
+                @include transition(all 300ms ease);
+                @include media-breakpoint-down(sm){
+                    max-width: 80px;
+                    margin: 0 auto 15px;
+                }
+            }
+        }
+        .counter-one {
+            position: relative;
+            color: #0d0d23;
+            font-size: 60px;
+            line-height: 1em;
+            font-weight: 800;
+            margin-bottom: 0;
+            @include media-breakpoint-down(sm){
+                font-size: 50px;
+            }
+        }
+        .counter-text {
+            position: relative;
+            color: #72727c;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.4px;
+            margin-bottom: 0;
+        }
+    }
+}

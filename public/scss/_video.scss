@@ -1,0 +1,70 @@
+/*** 
+
+====================================================================
+    Video Section
+====================================================================
+
+***/
+
+.video-section{
+    position: relative;
+    padding: 175px 0 182px;
+    @include media-breakpoint-down(xl){
+        padding: 150px 0;
+    }
+    @include media-breakpoint-down(md){
+        padding: 120px 0;
+    }
+    .bg {
+        &:before {
+            content: '';
+            @include overlay;
+            background-color: #0d0d23;
+            opacity: .60;
+        }
+    }
+    .icon-shape {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include media-breakpoint-down(sm){
+            display: none;
+        }
+    }
+    .outer-box {
+        position: relative;
+        text-align: center;
+        .title {
+            position: relative;
+            color: var(--theme-color-light);
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 1.2em;
+            margin-bottom: 35px;
+            text-align: center;
+            @include media-breakpoint-down(md){
+                font-size: 45px;
+            }
+            @include media-breakpoint-down(sm){
+                br {display: none;}
+                font-size: 32px;
+            }
+        }
+        
+        .play-btn{
+            .icon{
+                height: 113px;
+                width: 113px;
+                font-size: 28px;
+                @include media-breakpoint-down(md){
+                    width: 100px;
+                    height: 100px;
+                }
+                @include media-breakpoint-down(sm){
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+        }
+    }
+}

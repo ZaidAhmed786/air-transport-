@@ -1,0 +1,86 @@
+//Root
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+//Define theme colors
+$theme-color1: #da0b06;
+$theme-color2: #fb7405;
+
+:root {
+  //theme color
+  --theme-color-light: #ffffff;
+  --theme-color-dark: #000000;
+
+  --theme-color1: #{$theme-color1};
+  --theme-color1-dark: #af997c;
+  --theme-color2: #{$theme-color2};
+  --review-color: #fdc009;
+
+  //theme color
+  --theme-color-light: #ffffff;
+  --theme-color-dark: #000000;
+  
+  --theme-color1: #da0b06;
+  --theme-color2: #fb7405;
+
+  //text heading color
+  --text-color:         #72727c;
+  --headings-color:     var(--theme-color-dark);
+  --link-color:         var(--theme-color-dark);
+  --link-hover-color:   var(--theme-color-dark);
+
+  //font family
+  --title-font: 'Manrope', sans-serif;
+  --text-font: 'DM Sans', sans-serif;
+  
+  //body
+  --body-font-size:   16px;
+  --body-line-height: 30px;
+  --body-font-weight: 400;
+
+  //heading font size + weight
+  --line-height-heading-h1: 1em;
+  --line-height-heading: 1.2em;
+  --line-height-heading-small: 1.4em;
+
+  --h1-font-size: 84px;
+  --h2-font-size: 48px;
+  --h3-font-size: 34px;
+  --h4-font-size: 24px;
+  --h5-font-size: 20px;
+  --h6-font-size: 18px;
+
+  --h1-font-weight: 800;
+  --h2-font-weight: 800;
+  --h3-font-weight: 400;
+  --h4-font-weight: 400;
+  --h5-font-weight: 400;
+  --h6-font-weight: 400;
+
+  //section sub title
+  --sec-title-subtitle-color:       #72727c;
+  --sec-title-subtitle-font-size:   14px;
+  --sec-title-subtitle-font-family: var(--title-font);
+  --sec-title-subtitle-font-weight: var(--h2-font-weight);
+  --sec-title-subtitle-line-height: 1.2em;
+
+  //section title
+  --sec-title-color:        #0d0d23;
+  --sec-title-font-size:    50px;
+  --sec-title-font-family:  var(--title-font);
+  --sec-title-font-weight:  var(--h2-font-weight);
+
+  //news details page
+  --theme-light-background: #f8f6f1;
+  --theme-light-background-text-color: var(--headings-color);
+  --theme-black:        #131313;
+
+
+  //container
+  --container-width: 1200px;
+  --small-container-width: 1050px;
+  --large-container-width: 1600px;
+  --container-pt:    120px;
+  --container-pb:    120px;
+}

@@ -1,0 +1,188 @@
+/*** 
+
+====================================================================
+    Call To Action
+====================================================================
+
+***/
+
+.call-to-action {
+    position: relative;
+    padding: 120px 0;
+    .outer-box {
+        position: relative;
+        padding: 50px 58px 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include media-breakpoint-down(xl){
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 30px 30px;
+        }
+        .icon-man {
+            position: absolute;
+            bottom: 0;
+            right: -65px;
+            @include media-breakpoint-down(lg){
+                display: none;
+            }
+        }
+        
+        .title-box {
+            position: relative;
+            @include media-breakpoint-down(xl){
+                padding-bottom: 30px;
+            }
+            .sub-title {
+                position: relative;
+                display: block;
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: 0.6px;
+                color: #ffcbbb;
+                margin-bottom: 0;
+                text-transform: uppercase;
+            }
+            .title {
+                position: relative;
+                color: var(--theme-color-light);
+                font-size: 34px;
+                font-weight: 800;
+                margin-bottom: 0;
+                @include media-breakpoint-down(sm){
+                    font-size: 31px;
+                }
+            }
+        }
+        .button-box{
+            position: relative;
+            padding-right: 182px;
+            @include media-breakpoint-down(xl){
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+    Call To Action Two
+====================================================================
+
+***/
+
+.call-to-action-two {
+    position: relative;
+    padding: 120px 0;
+    .icon-plane-3 {
+        position: absolute;
+        bottom: -140px;
+        left: 20px;
+        @include media-breakpoint-down(lg){
+            display: none;
+        }
+    }
+    .outer-box {
+        position: relative;
+        padding: 120px 120px;
+        @include media-breakpoint-down(xl){
+            padding: 60px 60px;
+        }
+        @include media-breakpoint-down(lg){
+            padding: 40px 40px;
+        }
+        @include media-breakpoint-down(md){
+            padding: 50px 0;
+            text-align: center;
+        }
+        .bg {
+            right: -366px;
+            left: 0;
+            width: auto;
+            @include media-breakpoint-down(md){
+                right: 0;
+            }
+            &:before {
+                content: '';
+                @include overlay;
+                opacity: .65;
+                background-color: #0d0d23;
+            }
+        }
+        .icon-shape-3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include media-breakpoint-down(xl){
+                display: none;
+            }
+        }
+        .content {
+            position: relative;
+            display: inline-block;
+            padding-top: 65px;
+            padding-left: 85px;
+            @include media-breakpoint-down(xl){
+                padding-top: 60px;
+                padding-left: 60px;
+            }
+            @include media-breakpoint-down(lg){
+                padding-top: 40px;
+                padding-left: 40px;
+            }
+            @include media-breakpoint-down(md){
+                padding-top: 0;
+                padding-left: 0;
+                text-align: center;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 335px;
+                height: 20px;
+                border-top: 20px solid var(--theme-color2);
+                @include media-breakpoint-down(lg){
+                    width: 200px;
+                }
+                @include media-breakpoint-down(md){display: none;}
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 20px;
+                left: 0;
+                width: 20px;
+                height: 296px;
+                border-left: 20px solid var(--theme-color2);
+                @include media-breakpoint-down(lg){
+                    height: 230px;
+                }
+                @include media-breakpoint-down(md){display: none;}
+            }
+            .title {
+                position: relative;
+                font-size: 60px;
+                font-weight: 800;
+                color: var(--theme-color-light);
+                margin-bottom: 47px;
+                letter-spacing: -3.1px;
+                @include media-breakpoint-down(lg){
+                    font-size: 50px;
+                    margin-bottom: 35px;
+                }
+                @include media-breakpoint-down(md){
+                    font-size: 40px;
+                }
+                @include media-breakpoint-down(sm){
+                    font-size: 34px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}

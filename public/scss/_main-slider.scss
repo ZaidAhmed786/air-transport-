@@ -1,0 +1,178 @@
+/*** 
+
+====================================================================
+  Main Slider
+====================================================================
+
+***/
+
+.main-slider {
+    position: relative;
+    @include media-breakpoint-down(xl){
+        min-height: auto;
+    }
+    @include media-breakpoint-down(md){
+        text-align: center;
+    }
+    .sub-title {
+        position: relative;
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--theme-color-light);
+        @include media-breakpoint-down(sm){
+            font-size: 16px;
+        }
+    }
+    h1{
+        position: relative;
+        display: block;
+        color: var(--theme-color-light);
+        font-size: 70px;
+        font-weight: 800;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        z-index: 3;
+        @include media-breakpoint-down(md){
+            font-size: 50px;
+        }
+        @include media-breakpoint-down(sm){
+            font-size: 32px;
+        }
+    }
+    .exp-box {
+        position: relative;
+        width: 124px;
+        height: 124px;
+        @include flex-center;
+        flex-direction: column;
+        border-radius: 50%;
+        background-color: var(--theme-color-light);
+        z-index: 3;
+        @include media-breakpoint-down(xl){
+            display: none;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            right: 20px;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 10px solid var(--theme-color-light);
+            transform: rotate(-25deg);
+        }
+        .sub-title {
+            position: relative;
+            display: block;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 1em;
+            margin-bottom: 0;
+            color: #767676;
+            text-transform: uppercase;
+        }
+        .title {
+            position: relative;
+            font-size: 30px;
+            font-weight: 700;
+            color: #232331;
+            margin-bottom: 0;
+        }
+    }
+    .icon-plane {
+        @include media-breakpoint-down(xl){
+            display: none;
+        }
+    }
+    .image {
+        position: relative;
+        display: block;
+        margin-bottom: 0;
+        z-index: 3;
+        @include media-breakpoint-down(xl){
+            display: none;
+        }
+    }
+}
+.main-slider .tp-dottedoverlay {
+  &:after {
+      content: '';
+      @include overlay;
+      top: auto;
+      bottom: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: rgba(0, 0, 0, 0.5);
+      @include media-breakpoint-down(lg){
+        display: block;
+      }
+  }
+}
+.main-slider .image-box {
+    position: relative;
+    margin-right: -340px;
+    z-index: 9;
+}
+.main-slider .swiper-button-next:after{
+  content: "\f054";
+  font-family: "Font Awesome 6 Pro";
+  color: #fff;
+}
+.main-slider .swiper-button-prev:after{
+  content: "\f053";
+  font-family: "Font Awesome 6 Pro";
+  color: #fff;
+}
+:root {
+  --swiper-navigation-size: 12px;
+}
+.main-slider .swiper-button-next,
+.main-slider .swiper-button-prev{
+  display: block;
+    margin: 10px 0;
+    height: 50px;
+    width: 50px;
+    color: var(--theme-color-light);
+    background-color: var(--theme-color-dark);
+    font-size: 12px;
+    line-height: 50px;
+    font-weight: 500;
+    text-align: center;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+
+.banner-section .swiper-button-next:after{
+    content: "\f054";
+    font-family: "Font Awesome 6 Pro";
+    color: #fff;
+    font-size: 16px;
+  }
+  .banner-section .swiper-button-prev:after{
+    content: "\f053";
+    font-family: "Font Awesome 6 Pro";
+    color: #fff;
+    font-size: 16px;
+  }
+  .banner-section .swiper-button-next,
+  .banner-section .swiper-button-prev{
+    display: block;
+      margin: 10px 0;
+      height: 50px;
+      width: 50px;
+      color: var(--theme-color-light);
+      background-color: var(--theme-color1);
+      font-size: 16px;
+      line-height: 50px;
+      font-weight: 500;
+      text-align: center;
+      -webkit-transition: all 500ms ease;
+      transition: all 500ms ease;
+  }
+  .banner-section .swiper-button-next:hover,
+  .banner-section .swiper-button-prev:hover{
+    background-color: var(--theme-color2);
+  }

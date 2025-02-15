@@ -1,0 +1,256 @@
+/*** 
+
+====================================================================
+    Projects Section
+====================================================================
+
+***/
+
+.project-section {
+    position: relative;
+    padding: 120px 0;
+    .icon-plane-2 {
+        position: absolute;
+        bottom: -150px;
+        left: 64px;
+        @include media-breakpoint-down(md){
+            display: none;
+        }
+    }
+    .carousel-outer {
+        position: relative;
+        margin-right: -370px;
+        @include media-breakpoint-down(xxl){
+            margin-right: 0;
+        }
+    }
+    .default-navs {
+        .owl-nav {
+            position: absolute;
+            top: -105px;
+            right: 370px;
+            z-index: 3;
+            @include media-breakpoint-down(xxl){
+                right: 0;
+            }
+            @include media-breakpoint-down(md){
+                position: relative;
+                top: 0;
+                right: 0;
+                justify-content: center;
+                margin: 20px auto 0;
+            }
+        }
+    }
+}
+
+.project-block {
+    position: relative;
+    .inner-box {
+        position: relative;
+        &:hover {
+            .image {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .image{
+            position: relative;
+            margin-bottom: 0;
+            overflow: hidden;
+            img{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                @include transition(all 300ms ease);
+                @include media-breakpoint-down(md){
+                    height: 500px;
+                }
+                @include media-breakpoint-down(sm){
+                    height: auto;
+                }
+            }
+        }
+        .content{
+            position: relative;
+            margin-top: -40px;
+            margin-left: 40px;
+            margin-bottom: 5px;
+            padding: 26px 30px;
+            box-shadow: 0 8px 40px rgba(0, 8, 40, .07);
+            background-color: var(--theme-color-light);
+            z-index: 9;
+            @include media-breakpoint-down(xxl){
+                margin-left: 0;
+            }
+            @include media-breakpoint-down(md){
+                margin-top: 0;
+            }
+            .cat {
+                position: absolute;
+                top: -36px;
+                left: 0;
+                display: block;
+                font-size: 11px;
+                padding: 3px 33px;
+                letter-spacing: .2em;
+                color: var(--theme-color-light);
+                background-color: var(--theme-color2);
+                text-transform: uppercase;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: -9px;
+                    width: 10px;
+                    height: 100%;
+                    clip-path: polygon(0 0, 100% 100%, 0 100%);
+                    background-color: var(--theme-color2);
+                }
+            }
+            .title {
+                position: relative;
+                font-weight: 800;
+                margin-bottom: 0;
+                a:hover {
+                    color: var(--theme-color1);
+                }
+            }
+            .read-more {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50px;
+                height: 100%;
+                @include flex-center;
+                font-size: 14px;
+                color: var(--theme-color-light);
+                background-color: var(--theme-color-dark);
+                &:hover {
+                    background-color: var(--theme-color1);
+                    &::before {
+                        background-color: var(--theme-color1);
+                    }
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -20px;
+                    width: 21px;
+                    height: 100%;
+                    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+                    background-color: var(--theme-color-dark);
+                    @include transition(all 300ms ease);
+                }
+            }
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+    Projects Section Two
+====================================================================
+
+***/
+
+.project-section-two {
+    position: relative;
+    padding: 120px 0;
+    .owl-nav {
+        display: none;
+    }
+    .owl-dots {
+        margin-top: 45px;
+    }
+}
+
+.project-carousel .swiper-button-next:before,
+.project-carousel .swiper-button-prev:before{
+    border: 1px solid #bab9bd;
+    border-radius: 50px;
+    content: "";
+    height: 60px;
+    left: auto;
+    position: absolute;
+    right: unset;
+    top: -15px;
+    transition: all .2s ease;
+    width: 60px;
+}
+.project-carousel .swiper-button-next{
+    right: 170px;
+    top: 21px;
+    @media (max-width: 1499.98px) {
+        right: 20%;
+    }
+    @media (max-width: 1399.98px) {
+        right: 3%;
+    }
+    @include media-breakpoint-down(lg){
+      display: none;
+    } 
+}
+.project-carousel .swiper-button-prev{
+    left: auto;
+    top: 21px;
+    right: 240px;
+    @media (max-width: 1499.98px) {
+        right: 25%;
+    }
+    @media (max-width: 1399.98px) {
+        right: 9%;
+    }
+    @include media-breakpoint-down(lg){
+      display: none;
+    } 
+}
+.project-section .project-carousel{
+    margin-top: -60px;
+    padding-top: 100px;
+}
+.project-carousel .swiper-button-next:after,
+.project-carousel .swiper-button-prev:after{
+    margin-top: 16px;
+    font-size: 18px;
+}
+.project-carousel .swiper-button-next:after{
+  content: "\f178";
+  font-family: "Font Awesome 6 Pro";
+  color: #bab9bd;
+}
+.project-carousel .swiper-button-prev:after{
+  content: "\f177";
+  font-family: "Font Awesome 6 Pro";
+  color: #bab9bd;
+}
+.project-carousel .swiper-button-next:hover:before,
+.project-carousel .swiper-button-prev:hover:before{
+    border-color: var(--theme-color1);
+    color: var(--theme-color1);
+}
+.project-carousel .swiper-button-next:hover:after,
+.project-carousel .swiper-button-prev:hover:after{
+    color: var(--theme-color1);
+}
+
+.project-section-two .project-carousel .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: var(--theme-color1);
+  }
+  .project-section-two .project-carousel .swiper-pagination-bullet{
+    position: relative;
+      width: 12px;
+      height: 11px;
+      margin: 0 3px;
+      border-radius: 50%;
+      background-color: #f2c6c2;
+      -webkit-transition: all 300ms ease;
+      transition: all 300ms ease;
+  }
+  .project-section-two .project-carousel{
+      padding-bottom: 55px;
+  }
