@@ -843,7 +843,7 @@ Scroll To Top style
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
 }
 
@@ -1707,7 +1707,7 @@ Range Slider One
   background-color: var(--theme-color1);
 }
 .btn-style-one.orange-bg {
-  background-color: var(--theme-color2);
+  background-color: var(--theme-color1);
 }
 .btn-style-one.orange-bg:hover {
   color: var(--theme-color-light);
@@ -2436,7 +2436,7 @@ Range Slider One
   display: block;
 }
 .main-header .logo img {
-  max-width: 100%;
+  max-width: 20%;
   height: auto;
 }
 .main-header .main-box {
@@ -3715,7 +3715,7 @@ Range Slider One
 .main-slider .sub-title {
   position: relative;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 200;
   color: var(--theme-color-light);
 }
 @media (max-width: 575.98px) {
@@ -3727,7 +3727,7 @@ Range Slider One
   position: relative;
   display: block;
   color: var(--theme-color-light);
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 800;
   line-height: 1.2em;
   text-transform: uppercase;

@@ -56,8 +56,8 @@ const ServiceGrid = () => {
             >
               <div className="inner-box">
                 <figure className="image">
-                  <img src="images/resource/service1-3.jpg" alt="Image" />
-                  <img src="images/resource/service1-3.jpg" alt="Image" />
+                  <img src="images/resource/service1-3.jpeg" alt="Image" />
+                  <img src="images/resource/service1-3.jpeg" alt="Image" />
                 </figure>
                 <div className="content">
                   <div className="bg-color"></div>
@@ -102,8 +102,8 @@ const ServiceGrid = () => {
             >
               <div className="inner-box">
                 <figure className="image">
-                  <img src="images/resource/service1-3.jpg" alt="Image" />
-                  <img src="images/resource/service1-3.jpg" alt="Image" />
+                  <img src="images/resource/service1-3.jpeg" alt="Image" />
+                  <img src="images/resource/service1-3.jpeg" alt="Image" />
                 </figure>
                 <div className="content">
                   <div className="bg-color"></div>

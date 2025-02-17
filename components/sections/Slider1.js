@@ -1,7 +1,8 @@
-import Link from "next/link"
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination, EffectFade } from "swiper/modules";
-import 'swiper/css/effect-fade';
+import "swiper/css/effect-fade";
+
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation, EffectFade],
   slidesPerView: 1,
@@ -11,9 +12,10 @@ const swiperOptions = {
   },
   loop: true,
   navigation: true,
-  effect:'fade',
-  speed: 2000
+  effect: "fade",
+  speed: 2000,
 };
+
 const Slider1 = () => {
   return (
     <>
@@ -29,15 +31,45 @@ const Slider1 = () => {
               <div className="auto-container content-box pt-100 pb-100">
                 <div className="row">
                   <div className="content-column col-lg-12 col-md-12 col-sm-12 pt-100">
-                    <h1 className="animate-2">
-                      Fast, Reliable, Hassle-Free Logistics Solutions
+                    <h1
+                      className="animate-2"
+                      style={{
+                        fontSize: "4rem",
+                        fontWeight: "bold",
+                        background:
+                          "linear-gradient(90deg, transparent 50%, red 50%)",
+                        backgroundSize: "200% 100%",
+                        backgroundClip: "text",
+                        WebkitBackgroundClip: "text",
+                        color: "white",
+                      }}
+                    >
+                      WELLCOME TO
+                      <span
+                        style={{
+                          fontSize: "4rem",
+                          fontWeight: "bold",
+                          background:
+                            "linear-gradient(90deg, transparent 50%, red 50%)",
+                          backgroundSize: "200% 100%",
+                          backgroundClip: "text",
+                          WebkitBackgroundClip: "text",
+                          color: "transparent",
+                          WebkitTextStroke: "2px red",
+                          animation: "fillText 4s linear infinite",
+                        }}
+                      >
+                        {" "}
+                        TACHYON
+                      </span>
                     </h1>
                     <span className="sub-title animate-1">
-                      At [Your Company Name], we understand that time is money.
-                      That’s why we provide fast, reliable, and hassle-free
-                      delivery services. Whether you're a business or a
-                      consumer, we ensure your shipments get to their
-                      destination – on time, or your money back.
+                      At tachyon logistics, we understand that time is money.
+                      That’s why we provide fast, reliable,
+                      <br /> and hassle-free delivery services. Whether you're a
+                      business or a consumer, we ensure your <br />
+                      shipments get to their destination – on time, or your
+                      money back.
                     </span>
                     <div className="btn-box mt-50">
                       <div className="btn-outer">
@@ -74,15 +106,45 @@ const Slider1 = () => {
               <div className="auto-container content-box pt-100 pb-100">
                 <div className="row">
                   <div className="content-column col-lg-12 col-md-12 col-sm-12 pt-100">
-                    <h1 className="animate-2">
-                      Fast, Reliable, Hassle-Free Logistics Solutions
+                    <h1
+                      className="animate-2"
+                      style={{
+                        fontSize: "4rem",
+                        fontWeight: "bold",
+                        background:
+                          "linear-gradient(90deg, transparent 50%, red 50%)",
+                        backgroundSize: "200% 100%",
+                        backgroundClip: "text",
+                        WebkitBackgroundClip: "text",
+                        color: "white",
+                      }}
+                    >
+                      WELLCOME TO
+                      <span
+                        style={{
+                          fontSize: "4rem",
+                          fontWeight: "bold",
+                          background:
+                            "linear-gradient(90deg, transparent 50%, red 50%)",
+                          backgroundSize: "200% 100%",
+                          backgroundClip: "text",
+                          WebkitBackgroundClip: "text",
+                          color: "transparent",
+                          WebkitTextStroke: "2px red",
+                          animation: "fillText 4s linear infinite",
+                        }}
+                      >
+                        {" "}
+                        TACHYON
+                      </span>
                     </h1>
                     <span className="sub-title animate-1">
-                      At [Your Company Name], we understand that time is money.
-                      That’s why we provide fast, reliable, and hassle-free
-                      delivery services. Whether you're a business or a
-                      consumer, we ensure your shipments get to their
-                      destination – on time, or your money back.
+                      At tachyon logistics, we understand that time is money.
+                      That’s why we provide fast, reliable,
+                      <br /> and hassle-free delivery services. Whether you're a
+                      business or a consumer, we ensure your <br />
+                      shipments get to their destination – on time, or your
+                      money back.
                     </span>
                     <div className="btn-box mt-50">
                       <div className="btn-outer">
@@ -112,7 +174,20 @@ const Slider1 = () => {
           </Swiper>
         </div>
       </section>
+
+      {/* Define Animation in Global CSS */}
+      <style jsx global>{`
+        @keyframes fillText {
+          0% {
+            background-position: 100% 0;
+          }
+          100% {
+            background-position: 0 0;
+          }
+        }
+      `}</style>
     </>
   );
 };
-export default Slider1
+
+export default Slider1;

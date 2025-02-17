@@ -17,10 +17,7 @@ export default function Footer1() {
                     <i className="icon flaticon-global-shipping-1"></i>
                     <div className="text">
                       Address <br />{" "}
-                      <span>
-                        30 St Kilda Road, Jackson <br />
-                        Store, Australia
-                      </span>
+                      <span>10130 Londonshire Lane Tampa, FL 33647</span>
                     </div>
                   </li>
                   <li>
@@ -28,9 +25,9 @@ export default function Footer1() {
                     <div className="text">
                       Contact <br />{" "}
                       <Link href="mailto:needhelp@company.com">
-                        needhelp@company.com
+                        info@tachyonlogistics.net
                       </Link>{" "}
-                      <Link href="tel:+92880048720">+92 (8800) 48720</Link>
+                      <Link href="tel:+321-262-8235"> 321-262-8235</Link>
                     </div>
                   </li>
                   <li>
@@ -131,7 +128,7 @@ export default function Footer1() {
             <div className="auto-container">
               <div className="inner-container">
                 <div className="copyright-text">
-                  © Copyright 2024 by Company.com
+                  © Copyright 2025 | All Rights Reserved
                 </div>
                 {/* <ul className="social-icon-one light">
                   <li>

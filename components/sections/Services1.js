@@ -45,7 +45,7 @@ const Services1 = () => {
                   </figure>
                   <div className="content">
                     <div className="bg-color"></div>
-                    <i className="icon flaticon-cargo-boat"></i>
+                    <i className="icon flaticon-air"></i>
                     <h4 className="title">Freight Forwarding</h4>
                     <div className="text">
                       "Our freight forwarding services are designed to simplify
@@ -63,8 +63,8 @@ const Services1 = () => {
               >
                 <div className="inner-box">
                   <figure className="image">
-                    <img src="images/resource/service1-3.jpg" alt="Image" />
-                    <img src="images/resource/service1-3.jpg" alt="Image" />
+                    <img src="images/resource/service1-3.jpeg" alt="Image" />
+                    <img src="images/resource/service1-3.jpeg" alt="Image" />
                   </figure>
                   <div className="content">
                     <div className="bg-color"></div>

@@ -4,10 +4,10 @@ import ProjectGrid from "@/components/sections/innerpages/ProjectGrid"
 export default function pageProjectGrid() {
   return (
     <>
-    <Layout headerStyle={1} footerStyle={1}>
-    <PageTitle pageName="Project Grid" />
-    <ProjectGrid />
-    </Layout>
+      <Layout headerStyle={1} footerStyle={1}>
+        <PageTitle pageName="TrackOrder" />
+        <ProjectGrid />
+      </Layout>
     </>
-  )
+  );
 }

@@ -118,7 +118,7 @@ const Contact1 = () => {
                             <select className="custom-select">
                               <option value="">Select</option>
                               <option value="">Air Freight</option>
-                              <option value="">Sea Freight</option>
+                              {/* <option value="">Sea Freight</option> */}
                               <option value="">Road Freight</option>
                             </select>
                           </div>
@@ -128,7 +128,7 @@ const Contact1 = () => {
                             <select className="custom-select">
                               <option value="">Select</option>
                               <option value="">Air Freight</option>
-                              <option value="">Sea Freight</option>
+                              {/* <option value="">Sea Freight</option> */}
                               <option value="">Road Freight</option>
                             </select>
                           </div>

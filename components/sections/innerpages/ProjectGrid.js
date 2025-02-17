@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import Subscription1 from "../Subscription1";
+import Contact1 from "../Contact1";
 
 // const swiperOptions = {
 // 	modules: [Autoplay, Pagination, Navigation],
@@ -41,11 +43,11 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 // 	}
 // };
 const Tracknow = () => {
-	return (
-	<>
-		<section className="project-section-two">
-			<div className="large-container">
-			{/* <div className="carousel-outer">
+  return (
+    <>
+      <section className="project-section-two">
+        <div className="large-container">
+          {/* <div className="carousel-outer">
 					<Swiper {...swiperOptions} className="project-carousel owl-carousel owl-theme default-dots">
 						<SwiperSlide>
 							<div className="project-block">
@@ -109,9 +111,11 @@ const Tracknow = () => {
 						</SwiperSlide>
 					</Swiper>
 			</div> */}
-			</div>
-		</section>
-	</>
-	);
+          <Subscription1 />
+          <Contact1 />
+        </div>
+      </section>
+    </>
+  );
 };
 export default Tracknow;

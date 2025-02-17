@@ -1,6 +1,8 @@
-import Link from "next/link"
-import Menu from "./Menu"
-import MobileMenu from "./MobileMenu"
+import Link from "next/link";
+import Menu from "./Menu";
+import MobileMenu from "./MobileMenu";
+import { useEffect, useRef } from "react";
+
 export default function Header1({
   scroll,
   isMobileMenu,
@@ -8,6 +10,15 @@ export default function Header1({
   isSearch,
   handleSearch,
 }) {
+  const bulletRef = useRef(null);
+
+  useEffect(() => {
+    // Animation will run once when the component mounts
+    if (bulletRef.current) {
+      bulletRef.current.style.animation = "moveBullet 2s forwards";
+    }
+  }, []);
+
   return (
     <>
       <header
@@ -20,15 +31,15 @@ export default function Header1({
             <div className="top-left">
               <ul className="list-style-one light">
                 <li>
-                  <i className="fa fa-map-marker-alt"></i> 380 St Kilda Road,
-                  Australia
+                  <i className="fa fa-map-marker-alt"></i> 10130 Londonshire
+                  Lane Tampa, FL 33647
                 </li>
                 <li>
                   <i className="fa fa-clock"></i> Mon - Sat: 8am - 5pm
                 </li>
                 <li>
                   <i className="fa fa-phone"></i>{" "}
-                  <Link href="tel:92880087890">+92 (8800) 87890</Link>
+                  <Link href="tel:321-262-8235">321-262-8235</Link>
                 </li>
               </ul>
             </div>
@@ -46,12 +57,47 @@ export default function Header1({
 
         <div className="header-lower">
           <div className="main-box">
-            <div className="logo-box">
-              <div className="logo">
-                <Link href="/">
-                  <img src="images/logo.png" alt="Logo" title="Lozics" />
-                </Link>
-              </div>
+            {/* Bullet Image with Animation */}
+            <div
+              style={{
+                position: "relative",
+                width: "45%",
+                height: "auto", // Adjust height as needed
+                // overflow: "hidden",
+                marginRight: "2%",
+              }}
+            >
+              <img
+                ref={bulletRef}
+                style={{
+                  position: "absolute",
+                  left: "-109px", 
+                  top: "22%",
+                  transform: "translateY(-50%)",
+                  maxWidth: "200px", 
+                  height: "auto",
+                  zIndex: "1",
+                  animation: "moveBullet 0s forwards", 
+                }}
+                src="images/bulit.png" 
+                alt="Bullet"
+              />
+
+              <img
+                className="p-md-5 p-sm-1 "
+                style={{
+                  maxWidth: "400px",
+                  height: "auto",
+                  backgroundColor: "white",
+
+                  position: "relative",
+                  // padding: "50px",
+                  zIndex: "0",
+                }}
+                src="images/logo.png"
+                alt="Logo"
+                title="Lozics"
+              />
             </div>
             <div className="nav-outer">
               <nav className="nav main-menu">
@@ -60,20 +106,12 @@ export default function Header1({
             </div>
 
             <div className="outer-box">
-              {/* <button className="ui-btn search-btn" onClick={handleSearch}>
-                  <span className="icon lnr lnr-icon-search"></span>
-                </button> */}
-
-              {/* <button className="ui-btn cart-btn">
-                  <span className="icon lnr lnr-icon-shopping-cart"></span>
-                </button> */}
-
               <div className="btn-box">
                 <Link
                   href="page-contact"
                   className="theme-btn btn-style-one orange-bg"
                 >
-                  <span className="btn-title">Get A Quote</span>
+                  <span className="btn-title">Contact Us</span>
                 </Link>
               </div>
 
@@ -83,7 +121,8 @@ export default function Header1({
             </div>
           </div>
         </div>
-        {/* Mobile Menu  */}
+
+        {/* Mobile Menu */}
         <div className="mobile-menu">
           <div className="menu-backdrop" onClick={handleMobileMenu} />
 
@@ -101,23 +140,22 @@ export default function Header1({
             <MobileMenu />
             <ul className="contact-list-one">
               <li>
-                {/* Contact Info Box */}
                 <div className="contact-info-box">
                   <i className="icon lnr-icon-phone-handset" />
                   <span className="title">Call Now</span>
-                  <Link href="/tel:+92880098670">+92 (8800) - 98670</Link>
+                  <Link href="/tel:+321-262-8235"> 321-262-8235</Link>
                 </div>
               </li>
               <li>
-                {/* Contact Info Box */}
                 <div className="contact-info-box">
                   <span className="icon lnr-icon-envelope1" />
                   <span className="title">Send Email</span>
-                  <Link href="/mailto:help@company.com">help@company.com</Link>
+                  <Link href="/mailto:help@company.com">
+                    info@tachyonlogistics.net
+                  </Link>
                 </div>
               </li>
               <li>
-                {/* Contact Info Box */}
                 <div className="contact-info-box">
                   <span className="icon lnr-icon-clock" />
                   <span className="title">Send Email</span>
@@ -125,31 +163,9 @@ export default function Header1({
                 </div>
               </li>
             </ul>
-            {/* <ul className="social-links">
-                <li>
-                  <Link href="/#">
-                    <i className="fab fa-twitter" />
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#">
-                    <i className="fab fa-facebook-f" />
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#">
-                    <i className="fab fa-pinterest" />
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#">
-                    <i className="fab fa-instagram" />
-                  </Link>
-                </li>
-              </ul> */}
           </nav>
         </div>
-        {/* End Mobile Menu */}
+
         {/* Header Search */}
         <div className="search-popup">
           <span className="search-back-drop" onClick={handleSearch} />
@@ -172,8 +188,8 @@ export default function Header1({
             </form>
           </div>
         </div>
-        {/* End Header Search */}
-        {/* Sticky Header  */}
+
+        {/* Sticky Header */}
         <div
           className={`sticky-header ${
             scroll ? "fixed-header animated slideInDown" : ""
@@ -181,22 +197,17 @@ export default function Header1({
         >
           <div className="auto-container">
             <div className="inner-container">
-              {/*Logo*/}
               <div className="logo">
                 <Link href="/">
                   <img src="/images/logo.png" alt="" />
                 </Link>
               </div>
-              {/*Right Col*/}
               <div className="nav-outer">
-                {/* Main Menu */}
                 <nav className="main-menu">
                   <div className="navbar-collapse show collapse clearfix">
                     <Menu />
                   </div>
                 </nav>
-                {/* Main Menu End*/}
-                {/*Mobile Navigation Toggler*/}
                 <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
                   <span className="icon lnr-icon-bars" />
                 </div>
@@ -204,8 +215,19 @@ export default function Header1({
             </div>
           </div>
         </div>
-        {/* End Sticky Menu */}
       </header>
+
+      {/* Define Animation in Global CSS */}
+      <style jsx global>{`
+        @keyframes moveBullet {
+          0% {
+            left: -100px; /* Start from outside the screen */
+          }
+          100% {
+            left: calc(100% - 250px); /* Move to the end of the logo */
+          }
+        }
+      `}</style>
     </>
   );
 }
