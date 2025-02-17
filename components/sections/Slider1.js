@@ -17,67 +17,101 @@ const swiperOptions = {
 const Slider1 = () => {
   return (
     <>
-  <section className="main-slider">
-    <div className="outer-box">
-      <Swiper {...swiperOptions}>
-        <SwiperSlide className="slide-item">
-          <div className="bg bg-image" style={{ backgroundImage: 'url(/images/main-slider/1.jpg)' }}></div>
-          <div className="tp-dottedoverlay on"></div>
-          <div className="auto-container content-box pt-100 pb-100">
-              <div className="row">
-                  <div className="content-column col-lg-7 col-md-12 col-sm-12 pt-100">
-                    <span className="sub-title animate-1">Fast and reliable shipping</span>
-                    <h1 className="animate-2">Cost Effective <br className="d-none d-lg-block"/> Digital Marketing <br className="d-none d-lg-block"/> Agency</h1>
+      <section className="main-slider">
+        <div className="outer-box">
+          <Swiper {...swiperOptions}>
+            <SwiperSlide className="slide-item">
+              <div
+                className="bg bg-image"
+                style={{ backgroundImage: "url(/images/main-slider/1.jpg)" }}
+              ></div>
+              <div className="tp-dottedoverlay on"></div>
+              <div className="auto-container content-box pt-100 pb-100">
+                <div className="row">
+                  <div className="content-column col-lg-12 col-md-12 col-sm-12 pt-100">
+                    <h1 className="animate-2">
+                      Fast, Reliable, Hassle-Free Logistics Solutions
+                    </h1>
+                    <span className="sub-title animate-1">
+                      At [Your Company Name], we understand that time is money.
+                      That’s why we provide fast, reliable, and hassle-free
+                      delivery services. Whether you're a business or a
+                      consumer, we ensure your shipments get to their
+                      destination – on time, or your money back.
+                    </span>
                     <div className="btn-box mt-50">
                       <div className="btn-outer">
-                        <Link href="page-contact" className="theme-btn btn-style-one animate-3"><span className="btn-title">Get Started</span></Link>
+                        <Link
+                          href="page-contact"
+                          className="theme-btn btn-style-one animate-3"
+                        >
+                          <span className="btn-title">Get Started</span>
+                        </Link>
                       </div>
-                    </div><div className="icon-plane bounce-x animate-4"></div>
+                    </div>
+                    <div className="icon-plane bounce-x animate-4"></div>
                   </div>
                   <div className="image-column col-lg-5 col-md-12 col-sm-12">
-                    <div className="exp-box z-index-1 animate-5">
-                        <span className="sub-title">Trusted by</span>
-                        <h3 className="title">4890</h3>
-                    </div>
-                      <div className="image-box">
+                    {/* <div className="exp-box z-index-1 animate-5">
+                      <span className="sub-title">Trusted by</span>
+                      <h3 className="title">4890</h3>
+                    </div> */}
+                    {/* <div className="image-box">
                           <figure className="image animate-5"><img src="/images/main-slider/bus.png" alt=""/>
                           </figure>
-                      </div>
+                      </div> */}
                   </div>
+                </div>
               </div>
-          </div>
-        </SwiperSlide>
+            </SwiperSlide>
 
-        <SwiperSlide className="slide-item">
-          <div className="bg bg-image" style={{ backgroundImage: 'url(/images/main-slider/1.jpg)' }}></div>
-          <div className="tp-dottedoverlay on"></div>
-          <div className="auto-container content-box pt-100 pb-100">
-              <div className="row">
-                  <div className="content-column col-lg-7 col-md-12 col-sm-12 pt-100">
-                    <span className="sub-title animate-1">Fast and reliable shipping</span>
-                    <h1 className="animate-2">Cost Effective <br className="d-none d-lg-block"/> Digital Marketing <br className="d-none d-lg-block"/> Agency</h1>
+            <SwiperSlide className="slide-item">
+              <div
+                className="bg bg-image"
+                style={{ backgroundImage: "url(/images/main-slider/1.jpg)" }}
+              ></div>
+              <div className="tp-dottedoverlay on"></div>
+              <div className="auto-container content-box pt-100 pb-100">
+                <div className="row">
+                  <div className="content-column col-lg-12 col-md-12 col-sm-12 pt-100">
+                    <h1 className="animate-2">
+                      Fast, Reliable, Hassle-Free Logistics Solutions
+                    </h1>
+                    <span className="sub-title animate-1">
+                      At [Your Company Name], we understand that time is money.
+                      That’s why we provide fast, reliable, and hassle-free
+                      delivery services. Whether you're a business or a
+                      consumer, we ensure your shipments get to their
+                      destination – on time, or your money back.
+                    </span>
                     <div className="btn-box mt-50">
                       <div className="btn-outer">
-                        <Link href="page-contact" className="theme-btn btn-style-one animate-3"><span className="btn-title">Get Started</span></Link>
+                        <Link
+                          href="page-contact"
+                          className="theme-btn btn-style-one animate-3"
+                        >
+                          <span className="btn-title">Get Started</span>
+                        </Link>
                       </div>
-                    </div><div className="icon-plane bounce-x animate-4"></div>
+                    </div>
+                    <div className="icon-plane bounce-x animate-4"></div>
                   </div>
                   <div className="image-column col-lg-5 col-md-12 col-sm-12">
-                    <div className="exp-box z-index-1 animate-5">
-                        <span className="sub-title">Trusted by</span>
-                        <h3 className="title">4890</h3>
-                    </div>
-                      <div className="image-box">
+                    {/* <div className="exp-box z-index-1 animate-5">
+                      <span className="sub-title">Trusted by</span>
+                      <h3 className="title">4890</h3>
+                    </div> */}
+                    {/* <div className="image-box">
                           <figure className="image animate-5"><img src="/images/main-slider/bus.png" alt=""/>
                           </figure>
-                      </div>
+                      </div> */}
                   </div>
+                </div>
               </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
-    </div>
-  </section>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </section>
     </>
   );
 };

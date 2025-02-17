@@ -4,28 +4,37 @@ import ReactSlider from 'react-slider';
 
 const Contact1 = () => {
     return (
-        <>
+      <>
         <section className="contact-section p-0">
           <div className="icon-container"></div>
           <div className="auto-container">
             <div className="outer-box">
               <div className="row g-0">
-
                 <div className="content-column col-lg-6 col-md-12 col-sm-12 order-lg-2 wow fadeInRight">
                   <div className="inner-column">
                     <div className="icon-arrow"></div>
                     <div className="sec-title">
                       <span className="sub-title">Reach Us Now</span>
-                      <h2 className="scrub-each-word text-split">Take full control on shipping</h2>
-                      <div className="text">Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor incididunt labore dolore magna aliquaenim ad minim.</div>
+                      <h2 className="scrub-each-word text-split">
+                        Take full control on shipping
+                      </h2>
+                      <div className="text">
+                        Need to get in touch? We’d love to hear from you.
+                        Whether you have questions, need a quote, or are ready
+                        to schedule a shipment, our team is ready to help you.
+                        Reach out to us and experience hassle-free logistics
+                        today!
+                      </div>
                     </div>
                     <div className="row">
-
                       <div className="feature-block-two col-lg-4 col-md-4 col-sm-4">
                         <div className="inner-box">
                           <i className="icon fa fa-check"></i>
                           <div className="content">
-                            <h5 className="title">Tracking <br />made easy</h5>
+                            <h5 className="title">
+                              Tracking <br />
+                              made easy
+                            </h5>
                           </div>
                         </div>
                       </div>
@@ -34,7 +43,9 @@ const Contact1 = () => {
                         <div className="inner-box">
                           <i className="icon fa fa-check"></i>
                           <div className="content">
-                            <h5 className="title">Multiple <br /> warehouses</h5>
+                            <h5 className="title">
+                              Multiple <br /> warehouses
+                            </h5>
                           </div>
                         </div>
                       </div>
@@ -43,7 +54,10 @@ const Contact1 = () => {
                         <div className="inner-box">
                           <i className="icon fa fa-check"></i>
                           <div className="content">
-                            <h5 className="title">Quick <br />fast process</h5>
+                            <h5 className="title">
+                              Quick <br />
+                              fast process
+                            </h5>
                           </div>
                         </div>
                       </div>
@@ -51,25 +65,27 @@ const Contact1 = () => {
                   </div>
                 </div>
 
-                <div className="form-column col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="300ms">
+                <div
+                  className="form-column col-lg-6 col-md-12 col-sm-12 wow fadeInLeft"
+                  data-wow-delay="300ms"
+                >
                   <div className="inner-column">
                     <div className="contact-form">
                       <form method="post" action="get" id="contact-form">
                         <div className="row">
-
                           <div className="form-group col-lg-12 col-md-12">
                             <label>Your Name:</label>
-                            <input type="text" name="name" required/>
+                            <input type="text" name="name" required />
                           </div>
 
                           <div className="form-group col-lg-6 col-md-6">
                             <label>Your Email:</label>
-                            <input type="email" name="email" required/>
+                            <input type="email" name="email" required />
                           </div>
 
                           <div className="form-group col-lg-6 col-md-6">
                             <label>Phone No:</label>
-                            <input type="tel" name="phone" required/>
+                            <input type="tel" name="phone" required />
                           </div>
 
                           <div className="col-lg-12 col-md-12 col-sm-12 form-group">
@@ -80,9 +96,17 @@ const Contact1 = () => {
                                 thumbClassName="example-thumb"
                                 trackClassName="example-track"
                                 defaultValue={[0, 35, 100]}
-                                ariaLabel={['Leftmost thumb', 'Middle thumb', 'Rightmost thumb']}
-                                ariaValuetext={state => `Thumb value ${state.valueNow}`}
-                                renderThumb={(props, state) => <span {...props}>{state.valueNow}</span>}
+                                ariaLabel={[
+                                  "Leftmost thumb",
+                                  "Middle thumb",
+                                  "Rightmost thumb",
+                                ]}
+                                ariaValuetext={(state) =>
+                                  `Thumb value ${state.valueNow}`
+                                }
+                                renderThumb={(props, state) => (
+                                  <span {...props}>{state.valueNow}</span>
+                                )}
                                 pearling
                                 minDistance={1}
                               />
@@ -110,7 +134,13 @@ const Contact1 = () => {
                           </div>
 
                           <div className="form-group col-lg-12">
-                            <button type="submit" className="theme-btn btn-style-one bg-dark" name="submit-form"><span className="btn-title">Submit request</span></button>
+                            <button
+                              type="submit"
+                              className="theme-btn btn-style-one bg-dark"
+                              name="submit-form"
+                            >
+                              <span className="btn-title">Submit request</span>
+                            </button>
                           </div>
                         </div>
                       </form>
@@ -121,7 +151,7 @@ const Contact1 = () => {
             </div>
           </div>
         </section>
-        </>
+      </>
     );
 };
 export default Contact1

@@ -2,50 +2,50 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
-const swiperOptions = {
-	modules: [Autoplay, Pagination, Navigation],
-	slidesPerView: 4,
-	spaceBetween: 30,
-	autoplay: {
-		delay: 2500,
-		disableOnInteraction: false,
-	},
-  // Pagination
-  pagination: true,
-	loop: true,
-	breakpoints:{
-		320: {
-			slidesPerView: 1,
-			// spaceBetween: 30,
-		},
-		575: {
-			slidesPerView: 1,
-			// spaceBetween: 30,
-		},
-		767: {
-			slidesPerView: 2,
-			// spaceBetween: 30,
-		},
-		991: {
-			slidesPerView: 2,
-			// spaceBetween: 30,
-		},
-		1199: {
-			slidesPerView: 4,
-			// spaceBetween: 30,
-		},
-		1350: {
-			slidesPerView: 4,
-			// spaceBetween: 30,
-		},
-	}
-};
-const ProjectGrid = () => {
+// const swiperOptions = {
+// 	modules: [Autoplay, Pagination, Navigation],
+// 	slidesPerView: 4,
+// 	spaceBetween: 30,
+// 	autoplay: {
+// 		delay: 2500,
+// 		disableOnInteraction: false,
+// 	},
+//   // Pagination
+//   pagination: true,
+// 	loop: true,
+// 	breakpoints:{
+// 		320: {
+// 			slidesPerView: 1,
+// 			// spaceBetween: 30,
+// 		},
+// 		575: {
+// 			slidesPerView: 1,
+// 			// spaceBetween: 30,
+// 		},
+// 		767: {
+// 			slidesPerView: 2,
+// 			// spaceBetween: 30,
+// 		},
+// 		991: {
+// 			slidesPerView: 2,
+// 			// spaceBetween: 30,
+// 		},
+// 		1199: {
+// 			slidesPerView: 4,
+// 			// spaceBetween: 30,
+// 		},
+// 		1350: {
+// 			slidesPerView: 4,
+// 			// spaceBetween: 30,
+// 		},
+// 	}
+// };
+const Tracknow = () => {
 	return (
 	<>
 		<section className="project-section-two">
 			<div className="large-container">
-			<div className="carousel-outer">
+			{/* <div className="carousel-outer">
 					<Swiper {...swiperOptions} className="project-carousel owl-carousel owl-theme default-dots">
 						<SwiperSlide>
 							<div className="project-block">
@@ -108,10 +108,10 @@ const ProjectGrid = () => {
 							</div>
 						</SwiperSlide>
 					</Swiper>
-			</div>
+			</div> */}
 			</div>
 		</section>
 	</>
 	);
 };
-export default ProjectGrid
+export default Tracknow;

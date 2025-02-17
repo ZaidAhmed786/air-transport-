@@ -16,23 +16,23 @@ import WhyChooseUs1 from "@/components/sections/WhyChooseUs1"
 export default function Home() {
 
     return (
-        <>
-            <Layout headerStyle={1} footerStyle={1}>
-                <Slider1 />
-                <Features1 />
-                <About1 />
-                <Subscription1 />
-                <Services1 />
-                <Clients1 />
-                <About1T2 />
-                <Video1 />
-                <Testimonial1 />
-                <Project1 />
-                <CallToAction1 />
-                <WhyChooseUs1 />
-                <News1 />
-                <Contact1 />
-            </Layout>
-        </>
-    )
+      <>
+        <Layout headerStyle={1} footerStyle={1}>
+          <Slider1 />
+          <Features1 />
+          <About1 />
+          <Subscription1 />
+          <Services1 />
+          {/* <Clients1 /> */}
+          {/* <About1T2 /> */}
+          <Video1 />
+          <Testimonial1 />
+          {/* <Project1 /> */}
+          <CallToAction1 />
+          <WhyChooseUs1 />
+          {/* <News1 /> */}
+          <Contact1 />
+        </Layout>
+      </>
+    );
 }
