@@ -84,9 +84,9 @@ const Testimonial1 = () => {
           <div className="contact-column col-xl-3 col-lg-6 col-md-12 col-sm-12">
             <div className="inner-column">
               <div className="icon-globe"></div>
-              <a href=" 321-262-8235" className="phone">
+              <a href=" 888-973-8748 " className="phone">
                 {" "}
-                321-262-8235
+                888-973-8748 
               </a>
               <div className="text">
                 We’re Optimists Who Love to Work Together

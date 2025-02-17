@@ -39,7 +39,7 @@ export default function Header1({
                 </li>
                 <li>
                   <i className="fa fa-phone"></i>{" "}
-                  <Link href="tel:321-262-8235">321-262-8235</Link>
+                  <Link href="tel:888-973-8748 ">888-973-8748 </Link>
                 </li>
               </ul>
             </div>
@@ -143,7 +143,7 @@ export default function Header1({
                 <div className="contact-info-box">
                   <i className="icon lnr-icon-phone-handset" />
                   <span className="title">Call Now</span>
-                  <Link href="/tel:+321-262-8235"> 321-262-8235</Link>
+                  <Link href="/tel:+888-973-8748 "> 888-973-8748 </Link>
                 </div>
               </li>
               <li>

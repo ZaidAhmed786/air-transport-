@@ -77,10 +77,10 @@ export default function Menu() {
           </li>
 
           <li className="">
-            <Link href="/page-projects">Projects</Link>
+            <Link href="/track-project">Projects</Link>
             {/* <ul>
               <li>
-                <Link href="/page-projects">Projects Grid</Link>
+                <Link href="/track-project">Projects Grid</Link>
               </li>
               <li>
                 <Link href="/page-project-details">Project Details</Link>

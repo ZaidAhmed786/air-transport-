@@ -17,7 +17,7 @@ export default function Footer1() {
                     <i className="icon flaticon-global-shipping-1"></i>
                     <div className="text">
                       Address <br />{" "}
-                      <span>10130 Londonshire Lane Tampa, FL 33647</span>
+                      <span>5104 N OBT Orlando,  FL 32810</span>
                     </div>
                   </li>
                   <li>
@@ -27,7 +27,7 @@ export default function Footer1() {
                       <Link href="mailto:needhelp@company.com">
                         info@tachyonlogistics.net
                       </Link>{" "}
-                      <Link href="tel:+321-262-8235"> 321-262-8235</Link>
+                      <Link href="tel:+888-973-8748 "> 888-973-8748 </Link>
                     </div>
                   </li>
                   <li>
@@ -52,7 +52,7 @@ export default function Footer1() {
                   <div className="footer-widget about-widget">
                     <div className="logo">
                       <Link href="#">
-                        <img src="images/logo-3.png" alt="Logo" />
+                        <img src="images/logo.png" alt="Logo" width={"200px"}/>
                       </Link>
                     </div>
                     <div className="text">

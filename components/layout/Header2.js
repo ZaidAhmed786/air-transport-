@@ -22,7 +22,7 @@ export default function Header2({ scroll, isSearch, handleSearch, isMobileMenu, 
                 </li>
                 <li>
                   <i className="fa fa-phone-volume"></i>{" "}
-                  <Link href="tel:+321-262-8235"> 321-262-8235</Link>
+                  <Link href="tel:+888-973-8748 "> 888-973-8748 </Link>
                 </li>
               </ul>
             </div>
