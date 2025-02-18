@@ -8,7 +8,6 @@ const Tracknow = () => {
     <>
       <section className="project-section-two">
         <div className="large-container">
-          {/* <Subscription1 /> */}
           <Contact1 />
         </div>
       </section>

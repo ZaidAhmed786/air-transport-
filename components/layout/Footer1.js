@@ -16,8 +16,7 @@ export default function Footer1() {
                   <li>
                     <i className="icon flaticon-global-shipping-1"></i>
                     <div className="text">
-                      Address <br />{" "}
-                      <span>5104 N OBT Orlando,  FL 32810</span>
+                      Address <br /> <span>5104 N OBT Orlando, FL 32810</span>
                     </div>
                   </li>
                   <li>
@@ -52,7 +51,12 @@ export default function Footer1() {
                   <div className="footer-widget about-widget">
                     <div className="logo">
                       <Link href="#">
-                        <img src="images/logo.png" alt="Logo" width={"200px"}/>
+                        <img
+                          style={{ backgroundColor: "white", padding: "20px" }}
+                          src="images/logo.png"
+                          alt="Logo"
+                          width={"200px"}
+                        />
                       </Link>
                     </div>
                     <div className="text">
@@ -67,37 +71,6 @@ export default function Footer1() {
                     </Link>
                   </div>
                 </div>
-
-                {/* <div className="footer-column col-lg-3 col-md-6 col-sm-12">
-						<div className="footer-widget links-widget">
-						<h4 className="widget-title">Service</h4>
-						<div className="widget-content">
-							<ul className="user-links">
-							<li><i className="icon fa fa-angle-double-right"></i> <Link href="#">Reliability & Punctuality</Link></li>
-							<li><i className="icon fa fa-angle-double-right"></i> <Link href="#">Trusted Franchise</Link></li>
-							<li><i className="icon fa fa-angle-double-right"></i> <Link href="#">Warehoues Storage</Link></li>
-							<li><i className="icon fa fa-angle-double-right"></i> <Link href="#">Real Time Tracking</Link></li>
-							<li><i className="icon fa fa-angle-double-right"></i> <Link href="#">Transparent Pricing</Link></li>
-							</ul>
-						</div>
-						</div>
-					</div>
-
-					<div className="footer-column col-lg-3 col-md-6 col-sm-12">
-						<div className="footer-widget gallery-widget">
-						<h4 className="widget-title">Projects</h4>
-						<div className="widget-content">
-							<div className="insta-gallery">
-							<figure className="image"><Link href="#"><img src="images/resource/gallery-thumb-1.jpg" alt="Image"/></Link></figure>
-							<figure className="image"><Link href="#"><img src="images/resource/gallery-thumb-2.jpg" alt="Image"/></Link></figure>
-							<figure className="image"><Link href="#"><img src="images/resource/gallery-thumb-3.jpg" alt="Image"/></Link></figure>
-							<figure className="image"><Link href="#"><img src="images/resource/gallery-thumb-4.jpg" alt="Image"/></Link></figure>
-							<figure className="image"><Link href="#"><img src="images/resource/gallery-thumb-5.jpg" alt="Image"/></Link></figure>
-							<figure className="image"><Link href="#"><img src="images/resource/gallery-thumb-6.jpg" alt="Image"/></Link></figure>
-							</div>
-						</div>
-						</div>
-					</div> */}
 
                 <div className="footer-column col-lg-6 col-md-6 col-sm-12">
                   <div className="footer-widget newsletter-widget">
@@ -130,28 +103,6 @@ export default function Footer1() {
                 <div className="copyright-text">
                   © Copyright 2025 | All Rights Reserved
                 </div>
-                {/* <ul className="social-icon-one light">
-                  <li>
-                    <Link href="#">
-                      <i className="fab fa-facebook"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      <i className="fab fa-twitter"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      <i className="fab fa-pinterest-p"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      <i className="fab fa-instagram"></i>
-                    </Link>
-                  </li>
-                </ul> */}
               </div>
             </div>
           </div>

@@ -28,28 +28,7 @@ const ServiceGrid = () => {
                 </div>
               </div>
             </div>
-            {/* <div
-              className="service-block col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay="200ms"
-            >
-              <div className="inner-box">
-                <figure className="image">
-                  <img src="images/resource/service1-2.jpg" alt="Image" />
-                  <img src="images/resource/service1-2.jpg" alt="Image" />
-                </figure>
-                <div className="content">
-                  <div className="bg-color"></div>
-                  <i className="icon flaticon-cargo-boat"></i>
-                  <h4 className="title">
-                    <Link href="page-service-details">Sea </Link>
-                  </h4>
-                  <div className="text">
-                    Lorem ipsum dolor sit amet, simply free text available in
-                    the consectetur adipiscing.
-                  </div>
-                </div>
-              </div>
-            </div> */}
+
             <div
               className="service-block col-lg-6 col-md-6 wow fadeInUp"
               data-wow-delay="300ms"
@@ -74,28 +53,7 @@ const ServiceGrid = () => {
                 </div>
               </div>
             </div>
-            {/* <div
-              className="service-block col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay="400ms"
-            >
-              <div className="inner-box">
-                <figure className="image">
-                  <img src="images/resource/service1-2.jpg" alt="Image" />
-                  <img src="images/resource/service1-2.jpg" alt="Image" />
-                </figure>
-                <div className="content">
-                  <div className="bg-color"></div>
-                  <i className="icon flaticon-cargo-boat"></i>
-                  <h4 className="title">
-                    <Link href="page-service-details">Sea Transport</Link>
-                  </h4>
-                  <div className="text">
-                    Lorem ipsum dolor sit amet, simply free text available in
-                    the consectetur adipiscing.
-                  </div>
-                </div>
-              </div>
-            </div> */}
+
             <div
               className="service-block col-lg-6 col-md-6 wow fadeInUp"
               data-wow-delay="500ms"

@@ -17,16 +17,11 @@ export default function Home() {
           <Slider1 />
           <Features1 />
           <About1 />
-          {/* <Subscription1 /> */}
           <Services1 />
-          {/* <Clients1 /> */}
-          {/* <About1T2 /> */}
           <Video1 />
           <Testimonial1 />
-          {/* <Project1 /> */}
           <CallToAction1 />
           <WhyChooseUs1 />
-          {/* <News1 /> */}
           <Contact1 />
         </Layout>
       </>

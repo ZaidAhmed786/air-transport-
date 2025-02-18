@@ -27,6 +27,21 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/page-contact": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/page-contact.js"
+    ],
+    "/page-faq": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/page-faq.js"
+    ],
+    "/page-services": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/page-services.js"
+    ],
     "/track-project": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

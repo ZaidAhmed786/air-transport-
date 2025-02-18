@@ -83,32 +83,6 @@ const WhyChooseUs1 = () => {
                   <figure className="image">
                     <img src="images/resource/choose1-1.png" alt="Image" />
                   </figure>
-                  {/* <div className="list-box wow fadeInUp">
-                    <div className="icon-building"></div>
-                    <i className="icon flaticon-logistics-2"></i>
-                    <ul className="list-style-two light">
-                      <li>
-                        <i className="fa fa-plane"></i> Duis aute irure esse.
-                      </li>
-                      <li>
-                        <i className="fa fa-plane"></i> Excepteur sint occaecat
-                      </li>
-                      <li>
-                        <i className="fa fa-plane"></i> Quis donor ultrices
-                        gravida.
-                      </li>
-                      <li>
-                        <i className="fa fa-plane"></i> Risus viverra lacus vel.
-                      </li>
-                      <li>
-                        <i className="fa fa-plane"></i> Excepteur sint occaecat.
-                      </li>
-                    </ul>
-                  </div> */}
-                  {/* <div className="exp-box bounce-x">
-                    <span className="sub-title">Trusted by</span>
-                    <h3 className="title">4890</h3>
-                  </div> */}
                 </div>
               </div>
             </div>

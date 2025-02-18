@@ -17,14 +17,10 @@ const Video1 = () => {
                   Looking for the best <br />
                   logistics transport service?
                 </h1>
-                {/* <a onClick={() => setOpen(true)} className="play-btn">
-                  <i className="icon fa fa-play" aria-hidden="true"></i>
-                </a> */}
               </div>
             </div>
           </div>
         </section>
-        {/* <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} /> */}
       </>
     );
 };

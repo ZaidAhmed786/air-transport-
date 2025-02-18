@@ -13,7 +13,6 @@ export default function Header1({
   const bulletRef = useRef(null);
 
   useEffect(() => {
-    // Animation will run once when the component mounts
     if (bulletRef.current) {
       bulletRef.current.style.animation = "moveBullet 2s forwards";
     }
@@ -44,26 +43,18 @@ export default function Header1({
               </ul>
             </div>
             <div className="top-right">
-              <ul className="feature-ilst">
-                {/* <li><Link href="#">Help</Link></li> */}
-                {/* <li>
-                  <Link href="../section/TrackOrder">Track Now</Link>
-                </li> */}
-                {/* <li><Link href="#">Support</Link></li> */}
-              </ul>
+              <ul className="feature-ilst"></ul>
             </div>
           </div>
         </div>
 
         <div className="header-lower">
           <div className="main-box">
-            {/* Bullet Image with Animation */}
             <div
               style={{
                 position: "relative",
                 width: "45%",
-                height: "auto", // Adjust height as needed
-                // overflow: "hidden",
+                height: "auto",
                 marginRight: "2%",
               }}
             >
@@ -71,15 +62,15 @@ export default function Header1({
                 ref={bulletRef}
                 style={{
                   position: "absolute",
-                  left: "-109px", 
+                  left: "-109px",
                   top: "22%",
                   transform: "translateY(-50%)",
-                  maxWidth: "200px", 
+                  maxWidth: "200px",
                   height: "auto",
                   zIndex: "1",
-                  animation: "moveBullet 0s forwards", 
+                  animation: "moveBullet 0s forwards",
                 }}
-                src="images/bulit.png" 
+                src="images/bulit.png"
                 alt="Bullet"
               />
 
@@ -91,7 +82,6 @@ export default function Header1({
                   backgroundColor: "white",
 
                   position: "relative",
-                  // padding: "50px",
                   zIndex: "0",
                 }}
                 src="images/logo.png"

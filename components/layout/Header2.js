@@ -102,7 +102,6 @@ export default function Header2({ scroll, isSearch, handleSearch, isMobileMenu, 
           {/* Mobile Menu  */}
           <div className="mobile-menu">
             <div className="menu-backdrop" onClick={handleMobileMenu} />
-            {/*Here Menu Will Come Automatically Via Javascript / Same Menu as in Header*/}
             <nav className="menu-box">
               <div className="upper-box">
                 <div className="nav-logo">
@@ -199,13 +198,11 @@ export default function Header2({ scroll, isSearch, handleSearch, isMobileMenu, 
           >
             <div className="auto-container">
               <div className="inner-container">
-                {/*Logo*/}
                 <div className="logo">
                   <Link href="/">
                     <img src="/images/logo.png" alt="" />
                   </Link>
                 </div>
-                {/*Right Col*/}
                 <div className="nav-outer">
                   {/* Main Menu */}
                   <nav className="main-menu">
@@ -213,8 +210,6 @@ export default function Header2({ scroll, isSearch, handleSearch, isMobileMenu, 
                       <Menu />
                     </div>
                   </nav>
-                  {/* Main Menu End*/}
-                  {/*Mobile Navigation Toggler*/}
                   <div
                     className="mobile-nav-toggler"
                     onClick={handleMobileMenu}

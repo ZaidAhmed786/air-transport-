@@ -83,16 +83,7 @@ const Slider1 = () => {
                     </div>
                     <div className="icon-plane bounce-x animate-4"></div>
                   </div>
-                  <div className="image-column col-lg-5 col-md-12 col-sm-12">
-                    {/* <div className="exp-box z-index-1 animate-5">
-                      <span className="sub-title">Trusted by</span>
-                      <h3 className="title">4890</h3>
-                    </div> */}
-                    {/* <div className="image-box">
-                          <figure className="image animate-5"><img src="/images/main-slider/bus.png" alt=""/>
-                          </figure>
-                      </div> */}
-                  </div>
+                  <div className="image-column col-lg-5 col-md-12 col-sm-12"></div>
                 </div>
               </div>
             </SwiperSlide>
@@ -158,16 +149,7 @@ const Slider1 = () => {
                     </div>
                     <div className="icon-plane bounce-x animate-4"></div>
                   </div>
-                  <div className="image-column col-lg-5 col-md-12 col-sm-12">
-                    {/* <div className="exp-box z-index-1 animate-5">
-                      <span className="sub-title">Trusted by</span>
-                      <h3 className="title">4890</h3>
-                    </div> */}
-                    {/* <div className="image-box">
-                          <figure className="image animate-5"><img src="/images/main-slider/bus.png" alt=""/>
-                          </figure>
-                      </div> */}
-                  </div>
+                  <div className="image-column col-lg-5 col-md-12 col-sm-12"></div>
                 </div>
               </div>
             </SwiperSlide>
