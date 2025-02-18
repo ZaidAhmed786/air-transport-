@@ -44,7 +44,7 @@ const Slider1 = () => {
                         color: "white",
                       }}
                     >
-                      WELLCOME TO
+                      Welcome TO
                       <span
                         style={{
                           fontSize: "4rem",
@@ -119,7 +119,7 @@ const Slider1 = () => {
                         color: "white",
                       }}
                     >
-                      WELLCOME TO
+                      Welcome TO
                       <span
                         style={{
                           fontSize: "4rem",
