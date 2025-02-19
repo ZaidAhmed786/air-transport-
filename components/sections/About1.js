@@ -11,13 +11,7 @@ const About1 = () => {
                     <span className="sub-title">About Us</span>
                     <h2 className="scrub-each-word text-split">Our Mission:</h2>
                     <div className="text">
-                      At [Your Company Name], our mission is simple: to provide
-                      fast, secure, and hassle-free delivery services that meet
-                      the needs of our customers. We specialize in both air
-                      cargo and freight forwarding, ensuring that your goods
-                      arrive on time, every time. Our commitment to on-time
-                      delivery, backed by our refund policy, sets us apart from
-                      the competition.
+                     Tachyon Logistics created by the same group behind Pet Pros Services, inspired by the need for faster, more affordable shipping options. Bringing the same dedication to excellence, we deliver efficient, no-excuse service at competitive prices. 
                     </div>
                   </div>
                   <div className="list-outer-box">

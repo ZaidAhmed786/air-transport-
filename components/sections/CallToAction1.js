@@ -10,13 +10,9 @@ const CallToAction1 = () => {
 
               <div className="title-box">
                 <div className="inner-column">
-                  <span className="sub-title">Quisque vel ortor</span>
-                  <h3 className="title">Ready to send your parcel with us</h3>
+                  <span className="sub-title">Tachyon Logistics</span>
+                  <h3 className="title">From Pet Pros Services to Tachyon Logistics</h3>
                 </div>
-              </div>
-
-              <div className="button-box">
-                <Link href="page-contact" className="theme-btn btn-style-one bg-dark hover-light"><span className="btn-title">Discover More</span></Link>
               </div>
             </div>
           </div>

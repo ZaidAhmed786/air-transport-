@@ -70,12 +70,12 @@ export default function Header1({
                   zIndex: "1",
                   animation: "moveBullet 0s forwards",
                 }}
-                src="images/bulit.png"
+                src="images/Bullet.png"
                 alt="Bullet"
               />
 
               <img
-                className="p-md-5 p-sm-1 "
+                className="p-sm-1 "
                 style={{
                   maxWidth: "400px",
                   height: "auto",

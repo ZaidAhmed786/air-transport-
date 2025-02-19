@@ -19,10 +19,10 @@ export default function Home() {
           <About1 />
           <Services1 />
           <Video1 />
-          <Testimonial1 />
+          {/* <Testimonial1 /> */}
           <CallToAction1 />
           <WhyChooseUs1 />
-          <Contact1 />
+          {/* <Contact1 /> */}
         </Layout>
       </>
     );

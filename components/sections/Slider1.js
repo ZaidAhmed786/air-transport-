@@ -37,7 +37,7 @@ const Slider1 = () => {
                         fontSize: "4rem",
                         fontWeight: "bold",
                         background:
-                          "linear-gradient(90deg, transparent 50%, red 50%)",
+                          "linear-gradient(90deg, transparent 50%, #4d17b1 50%)",
                         backgroundSize: "200% 100%",
                         backgroundClip: "text",
                         WebkitBackgroundClip: "text",
@@ -50,12 +50,12 @@ const Slider1 = () => {
                           fontSize: "4rem",
                           fontWeight: "bold",
                           background:
-                            "linear-gradient(90deg, transparent 50%, red 50%)",
+                            "linear-gradient(90deg, transparent 50%, #4d17b1 50%)",
                           backgroundSize: "200% 100%",
                           backgroundClip: "text",
                           WebkitBackgroundClip: "text",
                           color: "transparent",
-                          WebkitTextStroke: "2px red",
+                          WebkitTextStroke: "2px #4d17b1",
                           animation: "fillText 4s linear infinite",
                         }}
                       >
@@ -116,12 +116,12 @@ const Slider1 = () => {
                           fontSize: "4rem",
                           fontWeight: "bold",
                           background:
-                            "linear-gradient(90deg, transparent 50%, red 50%)",
+                            "linear-gradient(90deg, transparent 50%, #4d17b1 50%)",
                           backgroundSize: "200% 100%",
                           backgroundClip: "text",
                           WebkitBackgroundClip: "text",
                           color: "transparent",
-                          WebkitTextStroke: "2px red",
+                          WebkitTextStroke: "2px #4d17b1",
                           animation: "fillText 4s linear infinite",
                         }}
                       >

@@ -7,7 +7,7 @@ const Video1 = () => {
         <section className="video-section">
           <div
             className="bg bg-image"
-            style={{ backgroundImage: "url(images/background/1.jpg)" }}
+            style={{ backgroundImage: "url(images/background/1.jpg)", objectFit: "center" }}
           ></div>
           <div className="icon-shape"></div>
           <div className="auto-container">

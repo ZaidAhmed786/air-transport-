@@ -41,13 +41,13 @@ License: copyright commercial
 :root {
   --theme-color-light: #ffffff;
   --theme-color-dark: #000000;
-  --theme-color1: #da0b06;
+  --theme-color1: #4d17b1;
   --theme-color1-dark: #af997c;
   --theme-color2: #fb7405;
   --review-color: #fdc009;
   --theme-color-light: #ffffff;
   --theme-color-dark: #000000;
-  --theme-color1: #da0b06;
+  --theme-color1: #4d17b1;
   --theme-color2: #fb7405;
   --text-color: #72727c;
   --headings-color: var(--theme-color-dark);
@@ -853,7 +853,7 @@ Scroll To Top style
 }
 
 .bg-pattern-3 {
-  background-image: url(../images/icons/pattern-3.jpg);
+  background-color: #4d17b1;
 }
 
 .bg-pattern-4 {
@@ -1643,6 +1643,7 @@ Range Slider One
   position: relative;
   line-height: 1em;
   padding: 23px 49px;
+  border-radius: 23px;
   font-weight: 700;
   overflow: hidden;
   font-size: 14px;
@@ -4747,6 +4748,7 @@ Range Slider One
 }
 .feature-block .inner-box {
   position: relative;
+  border-radius: 23px;
   padding: 13px 28px 30px;
   overflow: hidden;
   background-color: var(--theme-color-light);
@@ -6079,8 +6081,8 @@ Range Slider One
   padding-top: 15px;
   padding-left: 15px;
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fb7405), to(#da0b06));
-  background: linear-gradient(to bottom, #fb7405 0%, #da0b06 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fb7405), to(#4d17b1));
+  background: linear-gradient(to bottom, #fb7405 0%, #4d17b1 100%);
 }
 @media (max-width: 1199.98px) {
   .about-section-four .image-column .inner-column .exp-box {
