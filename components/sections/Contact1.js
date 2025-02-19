@@ -5,7 +5,6 @@ const Contact1 = () => {
   const [packages, setPackages] = useState([]);
   const [typeOfLocation, setTypeOfLocation] = useState("Select Location");
 
-  // Separate states for shippingTo and shippingFrom
   const [shippingTo, setShippingTo] = useState({
     address: "",
     apartment: "",
@@ -178,59 +177,64 @@ const Contact1 = () => {
                         </div>
 
                         {packages.map((pkg, index) => (
-                          <div
-                            key={index}
-                            className="form-group col-lg-12 col-md-12"
-                          >
+                          <div key={index} className="form-group row">
                             <label>Package {index + 1}</label>
-                            <input
-                              type="number"
-                              placeholder="Length (inches)"
-                              value={pkg.length}
-                              onChange={(e) =>
-                                handlePackageChange(
-                                  index,
-                                  "length",
-                                  e.target.value
-                                )
-                              }
-                            />
-                            <input
-                              type="number"
-                              placeholder="Width (inches)"
-                              value={pkg.width}
-                              onChange={(e) =>
-                                handlePackageChange(
-                                  index,
-                                  "width",
-                                  e.target.value
-                                )
-                              }
-                            />
-                            <input
-                              type="number"
-                              placeholder="Height (inches)"
-                              value={pkg.height}
-                              onChange={(e) =>
-                                handlePackageChange(
-                                  index,
-                                  "height",
-                                  e.target.value
-                                )
-                              }
-                            />
-                            <input
-                              type="number"
-                              placeholder="Weight (lbs)"
-                              value={pkg.weight}
-                              onChange={(e) =>
-                                handlePackageChange(
-                                  index,
-                                  "weight",
-                                  e.target.value
-                                )
-                              }
-                            />
+                            <div className="col-md-3 col-sm-12">
+                              <input
+                                type="number"
+                                placeholder="Length (inches)"
+                                value={pkg.length}
+                                onChange={(e) =>
+                                  handlePackageChange(
+                                    index,
+                                    "length",
+                                    e.target.value
+                                  )
+                                }
+                              />
+                            </div>
+                            <div className="col-md-3 col-sm-12">
+                              <input
+                                type="number"
+                                placeholder="Width (inches)"
+                                value={pkg.width}
+                                onChange={(e) =>
+                                  handlePackageChange(
+                                    index,
+                                    "width",
+                                    e.target.value
+                                  )
+                                }
+                              />
+                            </div>
+                            <div className="col-md-3 col-sm-12">
+                              <input
+                                type="number"
+                                placeholder="Height (inches)"
+                                value={pkg.height}
+                                onChange={(e) =>
+                                  handlePackageChange(
+                                    index,
+                                    "height",
+                                    e.target.value
+                                  )
+                                }
+                              />
+                            </div>
+                            <div className="col-md-3 col-sm-12">
+                              <input
+                                type="number"
+                                placeholder="Weight (lbs)"
+                                value={pkg.weight}
+                                onChange={(e) =>
+                                  handlePackageChange(
+                                    index,
+                                    "weight",
+                                    e.target.value
+                                  )
+                                }
+                              />
+                            </div>
                           </div>
                         ))}
 
