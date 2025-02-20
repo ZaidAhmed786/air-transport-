@@ -48,7 +48,7 @@ const Features1 = () => {
       
               <div className="image-column col-lg-3 col-md-12 col-sm-12">
                 <div className="inner-column">
-                  <figure className="image"><img src="images/resource/feature1-1.png" alt="Image"/></figure>
+                  <figure className="image"><img src="images/resource/feature1-1.png" style={{borderRadius: "20px"}} alt="Image"/></figure>
                   <div className="icon-feature zoom-one"></div>
                 </div>
               </div>

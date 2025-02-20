@@ -58,7 +58,7 @@ export default function Header1({
                 marginRight: "2%",
               }}
             >
-              <img
+              {/* <img
                 ref={bulletRef}
                 style={{
                   position: "absolute",
@@ -72,17 +72,21 @@ export default function Header1({
                 }}
                 src="images/Bullet.png"
                 alt="Bullet"
-              />
+              /> */}
 
               <img
+              ref={bulletRef}
                 className="p-sm-1 "
                 style={{
                   maxWidth: "400px",
-                  height: "auto",
-                  backgroundColor: "white",
-
-                  position: "relative",
-                  zIndex: "0",
+                  position: "absolute",
+                left: "-109px",
+                top: "22%",
+                transform: "translateY(-50%)",
+                maxWidth: "200px",
+                height: "auto",
+                zIndex: "1",
+                animation: "moveBullet 0s forwards",
                 }}
                 src="images/logo.png"
                 alt="Logo"
@@ -214,7 +218,7 @@ export default function Header1({
             left: -100px; /* Start from outside the screen */
           }
           100% {
-            left: calc(100% - 250px); /* Move to the end of the logo */
+            left: 100px; /* Move to the end of the logo */
           }
         }
       `}</style>

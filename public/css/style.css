@@ -3047,8 +3047,10 @@ Range Slider One
   text-decoration: underline;
 }
 .header-style-two .header-lower {
-  position: relative;
-  background-color: #0d0d23;
+  position: absolute;
+  /* background-color: #0d0d23; */
+  width: 100%;
+  padding: 15px 35px;
 }
 .header-style-two .header-lower .main-box {
   position: relative;
@@ -3182,7 +3184,7 @@ Range Slider One
 }
 .header-style-two .header-lower .outer-box .btn-box {
   position: relative;
-  background-color: var(--theme-color-light);
+  /* background-color: var(--theme-color-light); */
   width: 200px;
   height: 100%;
   margin-left: 50px;

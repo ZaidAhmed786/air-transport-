@@ -52,7 +52,7 @@ export default function Footer1() {
                     <div className="logo">
                       <Link href="#">
                         <img
-                          style={{ backgroundColor: "white", padding: "20px" }}
+                          style={{ padding: "20px" }}
                           src="images/logo.png"
                           alt="Logo"
                           width={"200px"}

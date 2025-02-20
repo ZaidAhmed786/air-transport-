@@ -16,7 +16,7 @@ export default function Menu() {
           </li>
 
           <li className="">
-            <Link href="/track-project">Projects</Link>
+            <Link href="/ship">Ship</Link>
           </li>
 
           <li>
