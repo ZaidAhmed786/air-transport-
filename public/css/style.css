@@ -2459,7 +2459,7 @@ Range Slider One
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: right;
   width: 100%;
 }
 
@@ -5137,6 +5137,7 @@ Range Slider One
 }
 .about-section .content-column .inner-column .list-outer-box .theme-btn {
   margin-top: 38px;
+  margin-bottom: 38px;
 }
 .about-section .content-column .inner-column .exp-box {
   position: relative;

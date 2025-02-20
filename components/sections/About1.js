@@ -42,6 +42,7 @@ const About1 = () => {
                       <Link
                         href="page-about"
                         className="theme-btn btn-style-one"
+                        style={{marginBottom: "30px"}}
                       >
                         <span className="btn-title">Discover More</span>
                       </Link>
