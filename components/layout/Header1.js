@@ -3,6 +3,7 @@ import Menu from "./Menu";
 import MobileMenu from "./MobileMenu";
 import { useEffect, useRef } from "react";
 
+import { MdOutlineAccountCircle } from "react-icons/md";
 export default function Header1({
   scroll,
   isMobileMenu,
@@ -75,18 +76,18 @@ export default function Header1({
               /> */}
 
               <img
-              ref={bulletRef}
+                ref={bulletRef}
                 className="p-sm-1 "
                 style={{
                   maxWidth: "400px",
                   position: "absolute",
-                left: "-109px",
-                top: "22%",
-                transform: "translateY(-50%)",
-                maxWidth: "200px",
-                height: "auto",
-                zIndex: "1",
-                animation: "moveBullet 0s forwards",
+                  left: "-109px",
+                  top: "22%",
+                  transform: "translateY(-50%)",
+                  maxWidth: "200px",
+                  height: "auto",
+                  zIndex: "1",
+                  animation: "moveBullet 0s forwards",
                 }}
                 src="images/logo.png"
                 alt="Logo"
@@ -100,7 +101,12 @@ export default function Header1({
             </div>
 
             <div className="outer-box">
-              <div className="btn-box">
+              <div className="btn-box gap-3">
+                <Link href="/MyAccount">
+                  <MdOutlineAccountCircle
+                    style={{ width: "30px", height: "30px", color: "white" }}
+                  />
+                </Link>
                 <Link
                   href="page-contact"
                   className="theme-btn btn-style-one orange-bg"

@@ -47,7 +47,7 @@ export default function Footer1() {
           <div className="widgets-section">
             <div className="auto-container">
               <div className="row">
-                <div className="footer-column col-lg-6 col-md-6 col-sm-12">
+                <div className="footer-column col-lg-4 col-md-6 col-sm-12">
                   <div className="footer-widget about-widget">
                     <div className="logo">
                       <Link href="#">
@@ -71,8 +71,105 @@ export default function Footer1() {
                     </Link>
                   </div>
                 </div>
+                <div className="footer-column col-lg-4 col-md-6 col-sm-12">
+                  <div className="footer-widget links-widget">
+                    {/* <h4 className="widget-title">Service</h4> */}
+                    <div className="widget-content">
+                      <ul className="user-links">
+                        <li>
+                          <i className="icon fa fa-angle-double-right"></i>{" "}
+                          <Link href="#">Terms and Service</Link>
+                        </li>
+                        <li>
+                          <i className="icon fa fa-angle-double-right"></i>{" "}
+                          <Link href="#">Legal Notice</Link>
+                        </li>
+                        <li>
+                          <i className="icon fa fa-angle-double-right"></i>{" "}
+                          <Link href="#">Cookie Use</Link>
+                        </li>
+                        <li>
+                          <i className="icon fa fa-angle-double-right"></i>{" "}
+                          <Link href="#">Privacy Use</Link>
+                        </li>
+                        <li>
+                          <i className="icon fa fa-angle-double-right"></i>{" "}
+                          <Link href="#">Fraud Awareness</Link>
+                        </li>
+                        <li>
+                          <i className="icon fa fa-angle-double-right"></i>{" "}
+                          <Link href="#">Customer Feedback</Link>
+                        </li>
+                        <li>
+                          <i className="icon fa fa-angle-double-right"></i>{" "}
+                          <Link href="#">
+                            Don't Sell My Personal Information.
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-                <div className="footer-column col-lg-6 col-md-6 col-sm-12">
+                {/* <div className="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div className="footer-widget gallery-widget">
+                    <h4 className="widget-title">Projects</h4>
+                    <div className="widget-content">
+                      <div className="insta-gallery">
+                        <figure className="image">
+                          <Link href="#">
+                            <img
+                              src="images/resource/gallery-thumb-1.jpg"
+                              alt="Image"
+                            />
+                          </Link>
+                        </figure>
+                        <figure className="image">
+                          <Link href="#">
+                            <img
+                              src="images/resource/gallery-thumb-2.jpg"
+                              alt="Image"
+                            />
+                          </Link>
+                        </figure>
+                        <figure className="image">
+                          <Link href="#">
+                            <img
+                              src="images/resource/gallery-thumb-3.jpg"
+                              alt="Image"
+                            />
+                          </Link>
+                        </figure>
+                        <figure className="image">
+                          <Link href="#">
+                            <img
+                              src="images/resource/gallery-thumb-4.jpg"
+                              alt="Image"
+                            />
+                          </Link>
+                        </figure>
+                        <figure className="image">
+                          <Link href="#">
+                            <img
+                              src="images/resource/gallery-thumb-5.jpg"
+                              alt="Image"
+                            />
+                          </Link>
+                        </figure>
+                        <figure className="image">
+                          <Link href="#">
+                            <img
+                              src="images/resource/gallery-thumb-6.jpg"
+                              alt="Image"
+                            />
+                          </Link>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div> */}
+
+                <div className="footer-column col-lg-4 col-md-6 col-sm-12">
                   <div className="footer-widget newsletter-widget">
                     <h4 className="widget-title">Newsletter</h4>
                     <div className="text">
@@ -101,7 +198,7 @@ export default function Footer1() {
             <div className="auto-container">
               <div className="inner-container">
                 <div className="copyright-text">
-                  © Copyright 2025 | All Rights Reserved
+                  Tachyon Logistics LLC 2024 © - all rights reserved
                 </div>
               </div>
             </div>

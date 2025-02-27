@@ -18,6 +18,12 @@ export default function Menu() {
           <li className="">
             <Link href="/ship">Ship</Link>
           </li>
+          <li className="">
+            <Link href="/Track">Track</Link>
+          </li>
+          <li className="">
+            <Link href="/CustomerServiceFeedback">Services Feedback</Link>
+          </li>
 
           <li>
             <Link href="/page-contact">Contact</Link>

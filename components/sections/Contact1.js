@@ -4,6 +4,8 @@ const Contact1 = () => {
   const [numberOfPackages, setNumberOfPackages] = useState(0);
   const [packages, setPackages] = useState([]);
   const [typeOfLocation, setTypeOfLocation] = useState("Select Location");
+  const [singleDestination, setSingleDestination] = useState(false); // State for single destination toggle
+  const [destination, setDestination] = useState(""); // State for single destination value
 
   const [shippingTo, setShippingTo] = useState({
     address: "",
@@ -30,19 +32,27 @@ const Contact1 = () => {
     additionalNotes: "",
   });
 
+  // Handle package changes
   const handlePackageChange = (index, field, value) => {
     const newPackages = [...packages];
     newPackages[index][field] = value;
     setPackages(newPackages);
   };
 
+  // Handle number of packages change
   const handleNumberOfPackagesChange = (e) => {
     const num = parseInt(e.target.value);
     setNumberOfPackages(num);
     if (num > packages.length) {
       const newPackages = [...packages];
       for (let i = packages.length; i < num; i++) {
-        newPackages.push({ length: "", width: "", height: "", weight: "" });
+        newPackages.push({
+          length: "",
+          width: "",
+          height: "",
+          weight: "",
+          destination: "",
+        });
       }
       setPackages(newPackages);
     } else if (num < packages.length) {
@@ -50,16 +60,41 @@ const Contact1 = () => {
     }
   };
 
+  // Handle shipping to changes
   const handleShippingToChange = (field, value) => {
     setShippingTo({ ...shippingTo, [field]: value });
   };
 
+  // Handle shipping from changes
   const handleShippingFromChange = (field, value) => {
     setShippingFrom({ ...shippingFrom, [field]: value });
   };
 
+  // Handle delivery options changes
   const handleDeliveryOptionsChange = (field, value) => {
     setDeliveryOptions({ ...deliveryOptions, [field]: value });
+  };
+
+  // Calculate total points
+  const calculatePoints = () => {
+    if (numberOfPackages === 0) return 0;
+    if (numberOfPackages === 1) return 3;
+    return 3 + (numberOfPackages - 1) * 2;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = {
+      numberOfPackages,
+      packages,
+      singleDestination,
+      destination,
+      shippingTo,
+      shippingFrom,
+      deliveryOptions,
+      typeOfLocation,
+    };
+    console.log("Form Data:", formData);
   };
 
   return (
@@ -129,7 +164,11 @@ const Contact1 = () => {
               >
                 <div className="inner-column">
                   <div className="contact-form">
-                    <form method="post" action="get" id="contact-form">
+                    <form
+                      method="post"
+                      onSubmit={handleSubmit}
+                      id="contact-form"
+                    >
                       <div className="row">
                         <div className="form-group col-lg-6 col-md-12">
                           <label>Profix</label>
@@ -166,7 +205,10 @@ const Contact1 = () => {
                         </div>
 
                         <div className="form-group col-lg-12 col-md-12">
-                          <label>Number of Packages:</label>
+                          <label>
+                            Number of Packages: Total Points:{" "}
+                            {calculatePoints()}
+                          </label>
                           <input
                             type="number"
                             name="numberOfPackages"
@@ -174,11 +216,38 @@ const Contact1 = () => {
                             onChange={handleNumberOfPackagesChange}
                             min="0"
                           />
+                          {/* <p></p> */}
                         </div>
 
+                        {/* Single Destination Checkbox */}
+                        <div className="form-group col-lg-12 col-md-12"></div>
+                        {/* 
+                        {singleDestination && (
+                          <div className="form-group col-lg-12 col-md-12">
+                            <label>Destination:</label>
+                            <input
+                              type="text"
+                              value={destination}
+                              onChange={(e) => setDestination(e.target.value)}
+                            />
+                          </div>
+                        )} */}
+                        <label style={{ display: "flex", gap: "10px" }}>
+                          <input
+                            style={{ width: "20px", height: "auto" }}
+                            type="checkbox"
+                            checked={singleDestination}
+                            onChange={(e) =>
+                              setSingleDestination(e.target.checked)
+                            }
+                          />
+                          Use Single Destination for All Packages
+                        </label>
+                        {/* Package Fields */}
                         {packages.map((pkg, index) => (
                           <div key={index} className="form-group row">
-                            <label>Package {index + 1}</label>
+                            <label>Package {index + 1} </label>
+
                             <div className="col-md-3 col-sm-12">
                               <input
                                 type="number"
@@ -235,9 +304,29 @@ const Contact1 = () => {
                                 }
                               />
                             </div>
+                            {/* Destination Field for Each Package */}
+                            {!singleDestination && (
+                              <div className="form-group col-lg-12 col-md-12">
+                                <label>
+                                  Destination for Package {index + 1}:
+                                </label>
+                                <input
+                                  type="text"
+                                  value={pkg.destination || ""}
+                                  onChange={(e) =>
+                                    handlePackageChange(
+                                      index,
+                                      "destination",
+                                      e.target.value
+                                    )
+                                  }
+                                />
+                              </div>
+                            )}
                           </div>
                         ))}
 
+                        {/* Shipping From Fields */}
                         <div className="form-group col-lg-12 col-md-6">
                           <label>Shipping from</label>
                           <input
