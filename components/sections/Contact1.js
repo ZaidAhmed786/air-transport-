@@ -82,19 +82,45 @@ const Contact1 = () => {
     return 3 + (numberOfPackages - 1) * 2;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     const formData = {
-      numberOfPackages,
-      packages,
-      singleDestination,
-      destination,
-      shippingTo,
-      shippingFrom,
-      deliveryOptions,
-      typeOfLocation,
+      profix: e.target.profix,
+      firstName: e.target.firstName.value,
+      middleName: e.target.middleName.value,
+      lastName: e.target.lastName.value,
+      phone: e.target.phone.value,
+      email: e.target.email.value,
+      numberOfPackages: numberOfPackages,
+      packages: packages,
+      shippingFrom: shippingFrom,
+      shippingTo: shippingTo,
+      typeOfLocation: typeOfLocation,
+      deliveryOptions: deliveryOptions,
     };
-    console.log("Form Data:", formData);
+
+    try {
+      const response = await fetch(
+        "http://localhost:5000/api/orderTracking/submit",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (response.ok) {
+        const result = await response.json();
+        console.log("Order submitted successfully:", result);
+      } else {
+        console.error("Failed to submit order");
+      }
+    } catch (error) {
+      console.error("Error submitting order:", error);
+    }
   };
 
   return (
